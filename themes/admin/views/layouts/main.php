@@ -34,7 +34,7 @@
 
 			$this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
-					array('label'=>'Dashboard', 'url'=>array('/site/index')),
+					array('label'=>'Dashboard', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
 					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 					array('label'=>'Artikel', 'url'=>array('/site/articles'), 'visible'=>!Yii::app()->user->isGuest),
 					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),

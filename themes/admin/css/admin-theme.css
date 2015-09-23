@@ -21,3 +21,12 @@ padding: 15px;
     position: fixed;
     width: 100%;
 }
+
+.admin-login-form {
+    width: 450px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px auto;
+
+}

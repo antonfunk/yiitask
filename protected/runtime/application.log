@@ -270,3 +270,30 @@ Stack trace:
 REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
 HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
 ---
+2015/09/23 12:22:23 [error] [exception.CException] exception 'CException' with message 'The view path "D:\xampp\htdocs\Projekte\YIICMS\protected\views\front" is not a valid directory.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:444
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(152): CWebApplication->setViewPath('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(45): CComponent->__set('viewPath', 'D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(561): WebApplicationEndBehavior->changeModulePaths(Object(CEvent))
+#3 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(32): CComponent->raiseEvent('onModuleCreate', Object(CEvent))
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(23): WebApplicationEndBehavior->onModuleCreate(Object(CEvent))
+#5 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/
+---
+2015/09/23 12:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/bootstrap/css/main.css".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/themes/bootstrap/css/main.css
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---

@@ -10,8 +10,10 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/admin-theme.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
@@ -34,12 +36,13 @@
 
 			$this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
-					array('label'=>'Dashboard', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'&nbsp;<i class="fa fa-tachometer"></i>&nbsp;Dashboard', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
 					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-					array('label'=>'Artikel', 'url'=>array('/site/articles'), 'visible'=>!Yii::app()->user->isGuest),
-					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'&nbsp;<i class="fa fa-book"></i>&nbsp;Artikel', 'url'=>array('/site/articles'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'Logout ('.Yii::app()->user->name.')&nbsp;<i class="fa fa-sign-out"></i>', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				),
-				'htmlOptions'=>array('class'=>'nav navbar-nav')
+				'htmlOptions'=>array('class'=>'nav navbar-nav'),
+                'encodeLabel' => false,
 			)); ?>
 
 		</div><!--/.nav-collapse -->

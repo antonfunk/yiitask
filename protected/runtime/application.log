@@ -1819,3 +1819,18 @@ Stack trace:
 REQUEST_URI=/Projekte/YIICMS/backend.php?r=gii/model/code&id=0
 HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=gii/model/index
 ---
+2015/09/23 17:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('dashboard')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('dashboard')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/dashboard
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---

@@ -297,3 +297,1405 @@ Stack trace:
 REQUEST_URI=/Projekte/YIICMS/themes/bootstrap/css/main.css
 HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
 ---
+2015/09/23 12:52:34 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.categories" is not defined.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(29): CComponent->__get('categories')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#11 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#12 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(45): CController->render('index', Array)
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('index')
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#20 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#21 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#23 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#24 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#25 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---
+2015/09/23 12:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 13:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 13:03:58 [error] [php] include(MainMenu.php): failed to open stream: No such file or directory (D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\YiiBase.php:427)
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWidgetFactory.php(146): import()
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(172): SiteController->createWidget()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): SiteController->widget()
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require()
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): SiteController->renderInternal()
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): CContentDecorator->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): SiteController->endWidget()
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): SiteController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require()
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): SiteController->renderInternal()
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): SiteController->renderFile()
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(45): SiteController->render()
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams()
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): SiteController->runAction()
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): SiteController->runActionWithFilters()
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): SiteController->run()
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController()
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CWebApplication->run()
+#24 unknown(0): WebApplicationEndBehavior->runEnd()
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array()
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->__call()
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd()
+REQUEST_URI=/Projekte/YIICMS/index.php
+in D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php (26)
+in D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php (6)
+in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php (45)
+2015/09/23 13:07:03 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainMenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(36): CWidget->render('mainMenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:08:46 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "menu/mainMenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(36): CWidget->render('menu/mainMenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:09:08 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "menu/mainMenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(36): CWidget->render('menu/mainMenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:09:26 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "menu/mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(36): CWidget->render('menu/mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:09:32 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(36): CWidget->render('mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:11:13 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:11:15 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:11:16 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:11:16 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:12:04 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(39): CWidget->render('mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:12:06 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(39): CWidget->render('mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:56:57 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "menu.mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(39): CWidget->render('menu.mainmenu', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 13:59:52 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu.mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:00:07 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:00:30 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu.mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:00:58 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:01:24 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:01:49 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:03:49 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:04:05 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('mainmenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:04:06 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('mainmenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:04:07 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('mainmenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:05:47 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu.mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:06:30 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu.mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:06:31 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu.mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:06:38 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu.mainmenu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(37): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:07:54 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.layouts.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(38): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:08:11 [error] [exception.CException] exception 'CException' with message 'MainMenu cannot find the view "webroot.themes.bootstrap.views.menu".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CWidget.php:246
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\components\MainMenu.php(38): CWidget->render('webroot.themes....', Array)
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\zii\widgets\CPortlet.php(97): MainMenu->renderContent()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(173): CPortlet->run()
+#3 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\main.php(26): CBaseController->widget('MainMenu')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(206): COutputProcessor->run()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 D:\xampp\htdocs\Projekte\YIICMS\themes\bootstrap\views\layouts\column1.php(6): CBaseController->endContent()
+#12 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#14 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(784): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#15 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\front\SiteController.php(35): CController->render('index')
+#16 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('')
+#21 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#24 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#25 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#26 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#27 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#28 {main}
+REQUEST_URI=/Projekte/YIICMS/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/23 14:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 14:45:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/htmlContent".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/ht...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/htmlContent".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/ht...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/contact
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---
+2015/09/23 14:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/htmlContent".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/ht...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/contact
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---
+2015/09/23 14:46:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/htmlContent".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/ht...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/contact
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---
+2015/09/23 14:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/htmlContent".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/ht...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/contact
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---
+2015/09/23 14:46:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/htmlContent".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/ht...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:46:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/GetContent".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/Ge...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:47:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:47:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:47:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/contact
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---
+2015/09/23 14:47:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/page?view=about
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/page?view=about
+---
+2015/09/23 14:47:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/page?view=about
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/index
+---
+2015/09/23 14:47:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/view".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/vi...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/contact
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/page?view=about
+---
+2015/09/23 14:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller>/<action>".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('<controller>/<a...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/site/contact
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/page?view=about
+---
+2015/09/23 14:52:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('GetContent')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/GetContent')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#7 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#10 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#11 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:52:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('GetContent')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/GetContent')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#7 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#10 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#11 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:52:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('GetContent')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/GetContent')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#7 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#10 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#11 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:52:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('GetContent')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/GetContent')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#7 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#10 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#11 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:52:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('GetContent')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/GetContent')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#7 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#10 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#11 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:52:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('GetContent')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/GetContent')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#7 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#10 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#11 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---
+2015/09/23 14:52:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:336
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('GetContent')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/GetContent')
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#7 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#10 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#11 {main}
+REQUEST_URI=/Projekte/YIICMS/site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/site/contact
+---

@@ -22,6 +22,19 @@ class SiteController extends Controller
         );
     }
 
+    public function actionGetContent ( $page ) {
+
+        $action = 'action'.ucfirst($page); //speziell dafür geschriebene Action?
+
+        if (method_exists($this,$action)) {
+            $this->$action();
+        } else {
+            $this->render('index' ); //ansonsten aus der Datenbank via model holen!
+        }
+
+
+    }
+
     /**
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
@@ -30,7 +43,9 @@ class SiteController extends Controller
     {
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/main.php'
-        $this->render('index');
+
+
+        $this->render('index' );
     }
 
     /**

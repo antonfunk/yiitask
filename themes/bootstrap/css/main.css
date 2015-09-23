@@ -1,0 +1,30 @@
+body {
+    background: #ECFBD4;
+}
+#page {
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#mainmenu {
+    margin-top: 15px;
+}
+
+.breadcrumbs {
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+
+.breadcrumbs:before {
+    content: 'Sie befinden sich hier: ';
+    display: inline-block;
+    color: #000000;
+    font-size: 11px;
+}
+.breadcrumbs * {
+    font-size: 11px;
+}

@@ -5,59 +5,59 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/menu.css" />
+
+
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/admin-theme.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
 
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"><?php echo CHtml::encode(Yii::app()->name); ?>-Admin</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar">
+			<?php
+
+
+			$this->widget('zii.widgets.CMenu',array(
+				'items'=>array(
+					array('label'=>'Dashboard', 'url'=>array('/site/index')),
+					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+					array('label'=>'Artikel', 'url'=>array('/site/articles'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+				),
+				'htmlOptions'=>array('class'=>'nav navbar-nav')
+			)); ?>
+
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
 <div class="container" id="page">
-
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?> Administration</div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<?php 
-		
-		
-		$this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Dashboard', 'url'=>array('/site/index')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-                    'homeLink'=>($this->id == 'site')? CHtml::link('Home', Yii::app()->baseUrl): CHtml::link('Dashboard', Yii::app()->homeUrl),
-
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
 	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by <?php echo Yii::app()->name;?>.<br/>
-		All Rights Reserved.<br/>
-		
-	</div><!-- footer -->
-
 </div><!-- page -->
+
+<footer class="footer" id="footer">
+	<div class="container">
+		<p class="text-muted">
+			Copyright &copy; <?php echo date('Y'); ?> by <?php echo Yii::app()->name;?>.<br/>
+			All Rights Reserved.<br/>
+		</p>
+	</div>
+</footer>
 
 </body>
 </html>

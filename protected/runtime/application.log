@@ -1,0 +1,200 @@
+2015/09/23 10:09:14 [error] [exception.CException] exception 'CException' with message 'The view path "D:\xampp\htdocs\Projekte\YIICMS\protected\views\back" is not a valid directory.' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:444
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(152): CWebApplication->setViewPath('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(45): CComponent->__set('viewPath', 'D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(561): WebApplicationEndBehavior->changeModulePaths(Object(CEvent))
+#3 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(32): CComponent->raiseEvent('onModuleCreate', Object(CEvent))
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(23): WebApplicationEndBehavior->onModuleCreate(Object(CEvent))
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/login
+---
+2015/09/23 10:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('index.php')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('index.php')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend/site/index.php
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend/site/index
+---
+2015/09/23 10:18:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/css/admin-theme.css".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('themes/admin/cs...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/themes/admin/css/admin-theme.css
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/login
+---
+2015/09/23 10:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/css/admin-theme.css".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('themes/admin/cs...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/themes/admin/css/admin-theme.css
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/login
+---
+2015/09/23 10:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/css/admin-theme.css".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('themes/admin/cs...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/themes/admin/css/admin-theme.css
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/login
+---
+2015/09/23 10:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/css/admin-theme.css".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('themes/admin/cs...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/themes/admin/css/admin-theme.css
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/login
+---
+2015/09/23 10:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/css/admin-theme.css".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('themes/admin/cs...')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CComponent->__call('runEnd', Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\index.php(11): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/Projekte/YIICMS/themes/admin/css/admin-theme.css
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/login
+---
+2015/09/23 10:34:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 10:35:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "trees".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('trees')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('trees')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/trees')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/trees
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 10:48:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 10:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "trees".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('trees')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('trees')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/trees')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/trees
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 10:50:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 10:51:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---
+2015/09/23 10:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "articles".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('articles')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('articles')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/articles')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/articles
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php
+---

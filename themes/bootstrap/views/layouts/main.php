@@ -16,6 +16,10 @@
 
 <div class="container" id="page">
 
+    <div id="page-header">
+
+    </div>
+
 
     <?php
     $this->widget('MainMenu');  //Hauptmenu laden, template unter views menu mainmenu.php

@@ -1,6 +1,14 @@
 body {
     background: #ECFBD4;
 }
+
+#page-header {
+    height: 150px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    margin-top: 15px;
+    background: #bce8f1;
+}
 #page {
     background: #FFF;
     border: 1px solid #DDD;
@@ -28,3 +36,4 @@ body {
 .breadcrumbs * {
     font-size: 11px;
 }
+

@@ -36,9 +36,10 @@
 
 			$this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
-					array('label'=>'&nbsp;<i class="fa fa-tachometer"></i>&nbsp;Dashboard', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'&nbsp;<i class="fa fa-tachometer"></i>&nbsp;Dashboard', 'url'=>array('/site/dashboard'), 'visible'=>!Yii::app()->user->isGuest),
 					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-					array('label'=>'&nbsp;<i class="fa fa-book"></i>&nbsp;Artikel', 'url'=>array('/site/articles'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'&nbsp;<i class="fa fa-book"></i>&nbsp;Artikel', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'&nbsp;<i class="fa fa-tree"></i>&nbsp;Verzeichnisse', 'url'=>array('/tree/index'), 'visible'=>!Yii::app()->user->isGuest),
 					array('label'=>'Logout ('.Yii::app()->user->name.')&nbsp;<i class="fa fa-sign-out"></i>', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				),
 				'htmlOptions'=>array('class'=>'nav navbar-nav'),

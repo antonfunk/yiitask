@@ -2068,3 +2068,129 @@ REQUEST_URI=/Projekte/YIICMS/backend.php?r=tree/index
 in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\TreeController.php (37)
 in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\TreeController.php (37)
 in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\TreeController.php (18)
+2015/09/24 15:06:16 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php(32): CController->render('index')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('index')
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#10 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#11 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#13 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#14 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/index
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=tree/index
+---
+2015/09/24 15:08:10 [error] [php] implode(): Invalid arguments passed (D:\xampp\htdocs\Projekte\YIICMS\themes\admin\views\site\index.php:5)
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(869): SiteController->renderFile()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(782): SiteController->renderPartial()
+#3 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php(32): SiteController->render()
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): SiteController->runAction()
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): SiteController->runActionWithFilters()
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): SiteController->run()
+#9 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CWebApplication->run()
+#12 unknown(0): WebApplicationEndBehavior->runEnd()
+#13 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array()
+#14 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->__call()
+#15 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd()
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/index/
+in D:\xampp\htdocs\Projekte\YIICMS\themes\admin\views\site\index.php (5)
+in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php (32)
+in D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php (25)
+2015/09/24 15:10:00 [error] [php] include(TreeController.php): failed to open stream: No such file or directory (D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\YiiBase.php:427)
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php(34): spl_autoload_call()
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): SiteController->runAction()
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): SiteController->runActionWithFilters()
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): SiteController->run()
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#8 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CWebApplication->run()
+#9 unknown(0): WebApplicationEndBehavior->runEnd()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array()
+#11 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->__call()
+#12 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd()
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/index/
+in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php (34)
+in D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php (25)
+in D:\xampp\htdocs\Projekte\YIICMS\backend.php (10)
+2015/09/24 15:10:55 [error] [php] include(D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\admin\TreeController.php): failed to open stream: No such file or directory (D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\YiiBase.php:401)
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php(36): spl_autoload_call()
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): SiteController->runAction()
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): SiteController->runActionWithFilters()
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): SiteController->run()
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#8 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CWebApplication->run()
+#9 unknown(0): WebApplicationEndBehavior->runEnd()
+#10 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array()
+#11 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->__call()
+#12 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd()
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/index/
+in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php (36)
+in D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php (25)
+in D:\xampp\htdocs\Projekte\YIICMS\backend.php (10)
+2015/09/24 15:11:03 [error] [php] Missing argument 2 for TreeController::createTreeView(), called in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php on line 36 and defined (D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\TreeController.php:21)
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): SiteController->runAction()
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): SiteController->runActionWithFilters()
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): SiteController->run()
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CWebApplication->run()
+#7 unknown(0): WebApplicationEndBehavior->runEnd()
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array()
+#9 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->__call()
+#10 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd()
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/index/
+in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\TreeController.php (21)
+in D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php (36)
+in D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php (25)
+2015/09/24 15:29:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('add')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('add')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('tree/add')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=tree/add
+---
+2015/09/24 15:50:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('dashboard')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('dashboard')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/dashboard
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---

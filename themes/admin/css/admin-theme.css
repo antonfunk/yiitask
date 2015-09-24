@@ -1,5 +1,6 @@
 body {
     margin-bottom: 85px;
+    font-size: 12px;
 }
 
 
@@ -29,4 +30,58 @@ padding: 15px;
     padding: 15px;
     margin: 15px auto;
 
+}
+
+.list-group-item-tree label {
+    font-weight: normal;
+    display: block;
+    padding-top: 5px;
+
+}
+.list-group-tree {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+
+.list-group-item-tree {
+    list-style-type: none;
+    font-weight: normal;
+    border-top: 1px solid #DDD;
+}
+
+.btn-square-small {
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size:12px;
+    float: right;
+    margin-left: 2px;
+}
+.list-group-tree .list-group-tree label {
+    padding-left: 15px;
+}
+
+.list-group-tree .list-group-tree .list-group-tree label {
+    padding-left: 30px;
+}
+
+.list-group-tree .list-group-tree .list-group-tree .list-group-tree label {
+    padding-left: 45px;
+}
+
+.list-group-tree .list-group-tree .list-group-tree .list-group-tree .list-group-tree label {
+    padding-left: 45px;
+}
+
+.item-list-actions .btn {
+    float: right;
+    margin:2px;
+}
+.item-list-actions hr {
+    clear: both;
 }

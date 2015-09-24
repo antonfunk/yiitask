@@ -28,10 +28,16 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        if (!Yii::app()->user->isGuest)
-            $this->render('admin-dashboard');
-        else
+        Yii::import('application.controllers.back.TreeController');
+
+        if (!Yii::app()->user->isGuest) {
+            $trees = Tree::model()->buildTreeArray(Tree::model()->findAll(array('order' => 'parent_id ASC')));
+
+            $this->render('index', array('trees' => TreeController::createTreeView($trees,0) ));
+        }
+        else {
             $this->redirect(array('login'));
+        }
     }
 
     /**

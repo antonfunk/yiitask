@@ -18,7 +18,7 @@ class TreeController extends Controller
         $this->render('index', array('trees' => $this->createTreeView($trees, 0)));
     }
 
-    function createTreeView($array, $currentParent, $currLevel = 0, $prevLevel = -1)
+    public static function createTreeView($array, $currentParent, $currLevel = 0, $prevLevel = -1)
     {
         $ret = array();
         foreach ($array as $category) {
@@ -30,12 +30,17 @@ class TreeController extends Controller
                 if ($currLevel == $prevLevel) {
                     $ret[] = " </li> ";
                 }
-                $ret[] = '<li class="list-group-item-tree"> <label for="subfolder2">' . $category['label'] . '</label> <input type="checkbox" name="subfolder2"/>';
+                $ret[] = '<li class="list-group-item-tree">
+                              <label>' . $category['label'];
+                $ret[] =  '<a href="#" class="btn btn-xs btn-danger btn-square-small"><i class="fa fa-trash"></i></a>';
+                $ret[] =  '<a href="#" class="btn btn-xs btn-primary btn-square-small"><i class="fa fa-pencil"></i></a>';
+                $ret[] =  '<a href="#" class="btn btn-xs btn-primary btn-square-small"><i class="fa fa-plus"></i></a>';
+                $ret[] =  '</label>';
                 if ($currLevel > $prevLevel) {
                     $prevLevel = $currLevel;
                 }
                 $currLevel++;
-                $ret[] = implode(PHP_EOL,$this->createTreeView($array, $categoryId, $currLevel, $prevLevel));
+                $ret[] = implode(PHP_EOL,self::createTreeView($array, $categoryId, $currLevel, $prevLevel));
                 $currLevel--;
             }
         }

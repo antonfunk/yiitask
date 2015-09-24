@@ -11,6 +11,9 @@
  * @property string $status
  * @property string $path
  */
+
+
+
 class Tree extends CActiveRecord
 {
 	/**
@@ -92,6 +95,23 @@ class Tree extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+
+
+
+	public function buildTreeArray ( $trees = array()   ) {
+
+
+		//Simplyfied
+		$count_cats = count($trees);
+		if($count_cats > 0){
+			$arr_category = array();
+			foreach($trees as $cat)
+				array_push($arr_category,$cat->attributes);
+		}
+
+			return $arr_category;
+
 	}
 
 	/**

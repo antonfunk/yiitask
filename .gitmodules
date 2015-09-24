@@ -1,0 +1,3 @@
+[submodule "themes/admin/js/jquery-contextmenu"]
+	path = themes/admin/js/jquery-contextmenu
+	url = https://github.com/swisnl/jQuery-contextMenu.git

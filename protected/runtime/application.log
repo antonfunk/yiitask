@@ -2209,3 +2209,73 @@ Stack trace:
 REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/dashboard
 HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
 ---
+2015/09/24 17:23:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('dashboard')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('dashboard')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend.php?r=site/dashboard
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend.php?r=site/index
+---
+2015/09/25 09:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(270): CController->missingAction('dashboard')
+#1 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('dashboard')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#8 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#9 {main}
+REQUEST_URI=/Projekte/YIICMS/backend/site/dashboard
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend/article/create
+---
+2015/09/25 09:25:14 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "dashboard".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(782): CController->renderPartial('dashboard', NULL, true)
+#1 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php(51): CController->render('dashboard')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionDashboard()
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('dashboard')
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#10 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#11 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#13 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#14 {main}
+REQUEST_URI=/Projekte/YIICMS/backend/site/dashboard
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend/article/create
+---
+2015/09/25 09:25:52 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "dashboard".' in D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(782): CController->renderPartial('dashboard', NULL, true)
+#1 D:\xampp\htdocs\Projekte\YIICMS\protected\controllers\back\SiteController.php(44): CController->render('dashboard')
+#2 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\actions\CInlineAction.php(49): SiteController->actionDashboard()
+#3 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(282): CController->run('dashboard')
+#7 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('site/dashboard')
+#8 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\Projekte\YIICMS\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#10 [internal function]: WebApplicationEndBehavior->runEnd('back')
+#11 D:\xampp\htdocs\Projekte\YIICMS\yii-1.1.14\base\CComponent.php(261): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CComponent->__call('runEnd', Array)
+#13 D:\xampp\htdocs\Projekte\YIICMS\backend.php(10): CWebApplication->runEnd('back')
+#14 {main}
+REQUEST_URI=/Projekte/YIICMS/backend/site/dashboard
+HTTP_REFERER=http://localhost/Projekte/YIICMS/backend/article/create
+---

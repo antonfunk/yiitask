@@ -2,7 +2,6 @@
 
 class SiteController extends Controller
 {
-
     /**
      * Declares class-based actions.
      */
@@ -28,14 +27,22 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        Yii::import('application.controllers.back.TreeController');
-
+        #Yii::import('application.controllers.back.TreeController');
         if (!Yii::app()->user->isGuest) {
-            $trees = Tree::model()->buildTreeArray(Tree::model()->findAll(array('order' => 'parent_id ASC')));
+            $this->render('dashboard');
 
-            $this->render('index', array('trees' => TreeController::createTreeView($trees,0) ));
+            #$trees = Tree::model()->buildTreeArray(Tree::model()->findAll(array('order' => 'parent_id ASC')));
+           # $this->render('index', array('trees' => TreeController::createTreeView($trees, 0)));
+        } else {
+            $this->redirect(array('login'));
         }
-        else {
+    }
+
+    public function actionDashboard()
+    {
+        if (!Yii::app()->user->isGuest) {
+            $this->render('dashboard');
+        } else {
             $this->redirect(array('login'));
         }
     }
@@ -45,12 +52,12 @@ class SiteController extends Controller
      */
     public function actionError()
     {
-        if ($error = Yii::app()->errorHandler->error)
-        {
-            if (Yii::app()->request->isAjaxRequest)
+        if ($error = Yii::app()->errorHandler->error) {
+            if (Yii::app()->request->isAjaxRequest) {
                 echo $error['message'];
-            else
+            } else {
                 $this->render('error', $error);
+            }
         }
     }
 
@@ -60,20 +67,15 @@ class SiteController extends Controller
     public function actionContact()
     {
         $model = new ContactForm;
-        if (isset($_POST['ContactForm']))
-        {
+        if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
-            if ($model->validate())
-            {
+            if ($model->validate()) {
                 $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
                 $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
-                $headers = "From: $name <{$model->email}>\r\n" .
-                        "Reply-To: {$model->email}\r\n" .
-                        "MIME-Version: 1.0\r\n" .
-                        "Content-type: text/plain; charset=UTF-8";
-
+                $headers = "From: $name <{$model->email}>\r\n" . "Reply-To: {$model->email}\r\n" . "MIME-Version: 1.0\r\n" . "Content-type: text/plain; charset=UTF-8";
                 mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
-                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::app()->user->setFlash('contact',
+                    'Thank you for contacting us. We will respond to you as soon as possible.');
                 $this->refresh();
             }
         }
@@ -85,24 +87,22 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::app()->user->isGuest)
+        if (!Yii::app()->user->isGuest) {
             $this->redirect('backend.php?r=site/index');
+        }
         $model = new LoginForm;
-
         // if it is ajax validation request
-        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form')
-        {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
-
         // collect user input data
-        if (isset($_POST['LoginForm']))
-        {
+        if (isset($_POST['LoginForm'])) {
             $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to the previous page if valid
-            if ($model->validate() && $model->login())
+            if ($model->validate() && $model->login()) {
                 $this->redirect(Yii::app()->user->returnUrl);
+            }
         }
         // display the login form
         $this->render('login', array('model' => $model));
@@ -116,5 +116,4 @@ class SiteController extends Controller
         Yii::app()->user->logout();
         $this->redirect('index.php');
     }
-
 }

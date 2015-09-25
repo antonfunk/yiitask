@@ -122,11 +122,18 @@ class ArticleController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Article');
+		Yii::import('application.controllers.back.TreeController');
+		$id = !isset($_GET['tr_id']) ? 0 : intval($_GET['tr_id']);
+		$dataProvider=new CActiveDataProvider('Article',array('criteria'=>array('condition'=>'tree_id='.$id)));
+		$trees = Tree::model()->buildTreeArray(Tree::model()->findAll(array('order' => 'parent_id ASC')));
+
+
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+			'trees' => TreeController::createTreeView($trees, 0),
 		));
 	}
+
 
 	/**
 	 * Manages all models.

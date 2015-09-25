@@ -85,3 +85,14 @@ padding: 15px;
 .item-list-actions hr {
     clear: both;
 }
+
+.date-done-property {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+}
+
+hr {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

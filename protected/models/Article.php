@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'article':
  * @property string $id
+ * @property string $status
  * @property integer $tree_id
  * @property string $title
  * @property string $teaser
@@ -37,10 +38,11 @@ class Article extends CActiveRecord
 			array('tree_id', 'required'),
 			array('tree_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>255),
+			array('status', 'length', 'max'=>1),
 			array('teaser, text, created, edited, deleted', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, tree_id, title, teaser, text, created, edited, deleted', 'safe', 'on'=>'search'),
+			array('id, status, tree_id, title, teaser, text, status, created, edited, deleted', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,7 +54,7 @@ class Article extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tree' => array(self::BELONGS_TO, 'Tree', 'tree_id'),
+			'tree' => array(self::BELONGS_TO, 'Tree', 'tree_id' ),
 		);
 	}
 
@@ -63,13 +65,14 @@ class Article extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'tree_id' => 'Tree',
-			'title' => 'Title',
-			'teaser' => 'Teaser',
-			'text' => 'Text',
-			'created' => 'Created',
-			'edited' => 'Edited',
-			'deleted' => 'Deleted',
+			'tree_id' => 'Verzeichnis',
+			'title' => 'Titel',
+			'teaser' => 'Kurztext',
+			'text' => 'Details',
+			'created' => 'Erstellt',
+			'edited' => 'Bearbeitet',
+			'deleted' => 'Gelöscht',
+			'status' => 'Status',
 		);
 	}
 
@@ -99,6 +102,7 @@ class Article extends CActiveRecord
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('edited',$this->edited,true);
 		$criteria->compare('deleted',$this->deleted,true);
+		$criteria->compare('status',$this->status,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

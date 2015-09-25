@@ -31,8 +31,8 @@ class TreeController extends Controller
                     $ret[] = " </li> ";
                 }
                 $ret[] = '<li class="list-group-item-tree">
-                              <label>' . $category['label'];
-                $ret[] =  '<a href="#" class="btn btn-xs btn-danger btn-square-small"><i class="fa fa-trash"></i></a>';
+                              <label><a href="?tr_id='.$categoryId.'">' . $category['label'].'</a>';
+                $ret[] =  '<a href="" class="btn btn-xs btn-danger btn-square-small"><i class="fa fa-trash"></i></a>';
                 $ret[] =  '<a href="#" class="btn btn-xs btn-primary btn-square-small"><i class="fa fa-pencil"></i></a>';
                 $ret[] =  '<a href="#" class="btn btn-xs btn-primary btn-square-small"><i class="fa fa-plus"></i></a>';
                 $ret[] =  '</label>';

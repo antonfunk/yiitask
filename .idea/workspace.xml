@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f85ba578-7de7-4a4e-bae7-3ee3b61f5818" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/back/ArticleController.php" afterPath="$PROJECT_DIR$/protected/controllers/back/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/admin/views/article/_form.php" afterPath="$PROJECT_DIR$/themes/admin/views/article/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YIICMS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/protected/controllers/back/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4025501">
-              <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -811,7 +808,7 @@
     <entry file="file://$PROJECT_DIR$/protected/controllers/back/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4025501">
-          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding />
         </state>
       </provider>

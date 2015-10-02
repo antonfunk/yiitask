@@ -95,7 +95,7 @@ class ArticleController extends Controller
 		// $this->performAjaxValidation($model);
 
         $_POST['Article']['edited'] = date('Y-m-d H:i:s');
-        
+
 
 		if(isset($_POST['Article']))
 		{

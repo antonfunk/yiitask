@@ -94,11 +94,13 @@ class ArticleController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-        $_POST['Article']['edited'] = date('Y-m-d H:i:s');
+      #
 
 
 		if(isset($_POST['Article']))
 		{
+			$_POST['Article']['edited'] = date('Y-m-d H:i:s');
+			
 			$model->attributes=$_POST['Article'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));

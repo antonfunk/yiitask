@@ -11,7 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/admin-theme.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+	<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/ckeditor/ckeditor.js"></script>
+	<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-2.0.2.min.js"></script>
+	<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<!-- da derzeit nur wenige scripts reingeladen werden, so, ansonsten in Module aufteilen -->
+	<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/cms.js"></script>
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -57,8 +61,7 @@
 <footer class="footer" id="footer">
 	<div class="container">
 		<p class="text-muted">
-			Copyright &copy; <?php echo date('Y'); ?> by <?php echo Yii::app()->name;?>.<br/>
-			All Rights Reserved.<br/>
+			Copyright &copy; <?php echo date('Y'); ?> by <?php echo Yii::app()->name;?>. All Rights Reserved.<br/>
 		</p>
 	</div>
 </footer>
